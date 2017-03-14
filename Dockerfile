@@ -13,8 +13,9 @@ RUN apt-get update \
 
 RUN mkdir -p /docker-entrypoint-initdb.d
 COPY ./initdb-postgis.sh /docker-entrypoint-initdb.d/postgis.sh
+# end copy
 COPY ./initdb-biodiversity-user.sh /docker-entrypoint-initdb.d/biodiversity-user.sh
 COPY ./initdb-biodiversity-create-database.sh /docker-entrypoint-initdb.d/biodiversity-create-database.sh
-# end copy
+
 
 
