@@ -1,7 +1,7 @@
 FROM postgres:9.4
 
 #copied from https://hub.docker.com/r/mdillon/postgis/~/dockerfile/
-EENV POSTGIS_MAJOR 2.2
+ENV POSTGIS_MAJOR 2.2
 ENV POSTGIS_VERSION 2.1.4+dfsg-3
 
 RUN apt-get update \
