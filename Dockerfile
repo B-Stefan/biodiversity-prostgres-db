@@ -1,8 +1,9 @@
-FROM postgres:9.4
+FROM postgres:9.6
 
 #copied from https://hub.docker.com/r/mdillon/postgis/~/dockerfile/
-ENV POSTGIS_MAJOR 2.2
-ENV POSTGIS_VERSION 2.1.4+dfsg-3
+
+ENV POSTGIS_MAJOR 2.3
+ENV POSTGIS_VERSION 2.3.2+dfsg-1~exp2.pgdg80+1
 
 RUN apt-get update \
       && apt-get install -y --no-install-recommends \
